@@ -14,7 +14,7 @@ RUN curl --tlsv1.3 --ssl-reqd --location \
   && unzip awscliv2.zip \
   && ./aws/install \
   && rm --recursive ./aws awscliv2.zip \
-  && echo "complete -C '/usr/bin/aws_completer' aws" >> ~/.bashrc
+  && echo "complete -C 'aws_completer' aws" >> ~/.bashrc
 # install aws-iam-authenticator for using kubectl
 RUN curl --tlsv1.2 --ssl-reqd --location --output /usr/local/bin/aws-iam-authenticator \
     https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator \
