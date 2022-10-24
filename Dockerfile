@@ -6,7 +6,7 @@ RUN apt update \
   && apt install --assume-yes \
     python3 python3-pip python3-ipython python3-requests python3-pandas \
     python3-kubernetes python3-boto3 \
-    curl wget bash git sqlite jq parallel unzip \
+    curl wget bash git sqlite jq parallel unzip vim \
     nmap inetutils-ping net-tools apt-file bind9-dnsutils
 # install aws cli v2:
 RUN curl --tlsv1.3 --ssl-reqd --location \
